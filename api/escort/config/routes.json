@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/escorts",
+      "handler": "Escort.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/escorts/count",
+      "handler": "Escort.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/escorts/:_id",
+      "handler": "Escort.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/escorts",
+      "handler": "Escort.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/escorts/:_id",
+      "handler": "Escort.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/escorts/:_id",
+      "handler": "Escort.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

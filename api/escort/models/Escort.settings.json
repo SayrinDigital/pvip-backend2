@@ -1,0 +1,76 @@
+{
+  "connection": "default",
+  "collectionName": "escort",
+  "info": {
+    "name": "escort",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "via": "escort",
+      "plugin": "users-permissions"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "nacimiento": {
+      "default": "",
+      "type": "date"
+    },
+    "categoria": {
+      "model": "categoria",
+      "via": "escorts"
+    },
+    "ubicacion": {
+      "default": "",
+      "type": "string"
+    },
+    "precio": {
+      "default": "",
+      "type": "integer"
+    },
+    "acerca": {
+      "default": "",
+      "type": "text"
+    },
+    "conestacionamiento": {
+      "default": false,
+      "type": "boolean"
+    },
+    "fotos": {
+      "collection": "foto",
+      "via": "escort"
+    },
+    "nacionalidad": {
+      "default": "",
+      "type": "string"
+    },
+    "whatsapp": {
+      "default": "",
+      "type": "string"
+    },
+    "altura": {
+      "default": "",
+      "type": "string"
+    },
+    "peso": {
+      "default": "",
+      "type": "string"
+    },
+    "etiquetas": {
+      "default": "",
+      "type": "json"
+    },
+    "calendario": {
+      "default": "",
+      "type": "json"
+    }
+  }
+}

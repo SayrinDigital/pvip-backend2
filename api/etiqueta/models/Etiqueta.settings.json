@@ -2,30 +2,24 @@
   "connection": "default",
   "collectionName": "",
   "info": {
-    "name": "categoria",
+    "name": "etiqueta",
     "description": ""
   },
   "options": {
     "timestamps": true
   },
   "attributes": {
-    "cover": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "nombre": {
       "default": "",
       "type": "string"
     },
-    "descripcion": {
+    "opciones": {
       "default": "",
       "type": "text"
     },
-    "escorts": {
-      "collection": "escort",
-      "via": "categoria"
+    "multiple": {
+      "default": false,
+      "type": "boolean"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "negocio",
+  "info": {
+    "name": "negocio",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "user": {
+      "model": "user",
+      "via": "negocio",
+      "plugin": "users-permissions"
+    },
+    "servicio": {
+      "model": "servicio",
+      "via": "negocios"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+'use strict';
+
+/**
+ * Escortservicio.js controller
+ *
+ * @description: A set of functions called "actions" for managing `Escortservicio`.
+ */
+
+module.exports = {
+
+  /**
+   * Retrieve escortservicio records.
+   *
+   * @return {Object|Array}
+   */
+
+  find: async (ctx) => {
+    if (ctx.query._q) {
+      return strapi.services.escortservicio.search(ctx.query);
+    } else {
+      return strapi.services.escortservicio.fetchAll(ctx.query);
+    }
+  },
+
+  /**
+   * Retrieve a escortservicio record.
+   *
+   * @return {Object}
+   */
+
+  findOne: async (ctx) => {
+    if (!ctx.params._id.match(/^[0-9a-fA-F]{24}$/)) {
+      return ctx.notFound();
+    }
+
+    return strapi.services.escortservicio.fetch(ctx.params);
+  },
+
+  /**
+   * Count escortservicio records.
+   *
+   * @return {Number}
+   */
+
+  count: async (ctx) => {
+    return strapi.services.escortservicio.count(ctx.query);
+  },
+
+  /**
+   * Create a/an escortservicio record.
+   *
+   * @return {Object}
+   */
+
+  create: async (ctx) => {
+    return strapi.services.escortservicio.add(ctx.request.body);
+  },
+
+  /**
+   * Update a/an escortservicio record.
+   *
+   * @return {Object}
+   */
+
+  update: async (ctx, next) => {
+    return strapi.services.escortservicio.edit(ctx.params, ctx.request.body) ;
+  },
+
+  /**
+   * Destroy a/an escortservicio record.
+   *
+   * @return {Object}
+   */
+
+  destroy: async (ctx, next) => {
+    return strapi.services.escortservicio.remove(ctx.params);
+  }
+};

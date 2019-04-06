@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/negocios",
+      "handler": "Negocio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negocios/count",
+      "handler": "Negocio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negocios/:_id",
+      "handler": "Negocio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negocios",
+      "handler": "Negocio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/negocios/:_id",
+      "handler": "Negocio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/negocios/:_id",
+      "handler": "Negocio.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

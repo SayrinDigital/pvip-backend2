@@ -2,19 +2,13 @@
   "connection": "default",
   "collectionName": "",
   "info": {
-    "name": "categoria",
+    "name": "servicio",
     "description": ""
   },
   "options": {
     "timestamps": true
   },
   "attributes": {
-    "cover": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "nombre": {
       "default": "",
       "type": "string"
@@ -23,9 +17,9 @@
       "default": "",
       "type": "text"
     },
-    "escorts": {
-      "collection": "escort",
-      "via": "categoria"
+    "negocios": {
+      "collection": "negocio",
+      "via": "servicio"
     }
   }
 }
