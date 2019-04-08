@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "anunciate",
   "info": {
     "name": "anunciate",
     "description": ""
@@ -12,6 +12,12 @@
     "descripcion": {
       "default": "",
       "type": "text"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }

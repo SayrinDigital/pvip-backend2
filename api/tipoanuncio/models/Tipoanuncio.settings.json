@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "tipoanuncio",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "contenido": {
+      "default": "# Anuncio Bronce\n30 DÍAS $120.000 | 15 DÍAS $90.000 | 7 DÍAS $60.000\n\n- Fotografía de portada de tamaño pequeño.\n- Listado en 3er grupo de portada y categoría.\n- Publicación de hasta 6 fotografías en book.\n- Publicación de 1 historia al día.\n- Poner en pausa el anuncio hasta 1 vez.\n- Anuncio en pausa hasta por 30 días.\n- Anuncio en promoción hasta por 7 días.\n- Acceso a plataforma de autoservicio 24hrs.\n- Asistencia telefónica en horario de oficina.",
+      "type": "text"
+    }
+  }
+}

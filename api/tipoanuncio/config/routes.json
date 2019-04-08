@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipoanuncios",
+      "handler": "Tipoanuncio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipoanuncios/count",
+      "handler": "Tipoanuncio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipoanuncios/:_id",
+      "handler": "Tipoanuncio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipoanuncios",
+      "handler": "Tipoanuncio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipoanuncios/:_id",
+      "handler": "Tipoanuncio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipoanuncios/:_id",
+      "handler": "Tipoanuncio.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
