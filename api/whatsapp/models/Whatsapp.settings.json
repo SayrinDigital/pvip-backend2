@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "whatsapp",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "mensaje": {
+      "default": "Hola {{ nombre }}",
+      "type": "string"
+    }
+  }
+}

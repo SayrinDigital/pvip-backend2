@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/anunciates",
+      "handler": "Anunciate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anunciates/count",
+      "handler": "Anunciate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anunciates/:_id",
+      "handler": "Anunciate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/anunciates",
+      "handler": "Anunciate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/anunciates/:_id",
+      "handler": "Anunciate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/anunciates/:_id",
+      "handler": "Anunciate.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

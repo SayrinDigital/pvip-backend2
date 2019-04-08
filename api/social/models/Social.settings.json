@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "escortservicio",
+  "collectionName": "",
   "info": {
-    "name": "escortservicio",
+    "name": "social",
     "description": ""
   },
   "options": {
@@ -13,9 +13,9 @@
       "default": "",
       "type": "string"
     },
-    "descripcion": {
+    "url": {
       "default": "",
-      "type": "text"
+      "type": "string"
     }
   }
 }
