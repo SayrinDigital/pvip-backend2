@@ -71,6 +71,14 @@
     "calendario": {
       "default": "",
       "type": "json"
+    },
+    "incluidos": {
+      "default": "",
+      "type": "json"
+    },
+    "adicionales": {
+      "default": "",
+      "type": "json"
     }
   }
 }
