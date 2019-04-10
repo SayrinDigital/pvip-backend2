@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "calificacion",
+  "info": {
+    "name": "calificacion",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "escort": {
+      "model": "escort",
+      "via": "calificacions"
+    },
+    "resumen": {
+      "default": "",
+      "type": "json"
+    },
+    "cliente": {
+      "model": "cliente",
+      "via": "calificacion"
+    }
+  }
+}

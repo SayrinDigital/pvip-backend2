@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/formulariocalificacions",
+      "handler": "Formulariocalificacion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formulariocalificacions/count",
+      "handler": "Formulariocalificacion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formulariocalificacions/:_id",
+      "handler": "Formulariocalificacion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formulariocalificacions",
+      "handler": "Formulariocalificacion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formulariocalificacions/:_id",
+      "handler": "Formulariocalificacion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/formulariocalificacions/:_id",
+      "handler": "Formulariocalificacion.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -14,6 +14,15 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "user": {
+      "model": "user",
+      "via": "cliente",
+      "plugin": "users-permissions"
+    },
+    "calificacion": {
+      "collection": "calificacion",
+      "via": "cliente"
     }
   }
 }
