@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "formulariocalificacion",
   "info": {
     "name": "formulariocalificacion",
     "description": ""
@@ -13,9 +13,9 @@
       "default": "",
       "type": "string"
     },
-    "opciones": {
+    "campos": {
       "default": "",
-      "type": "string"
+      "type": "json"
     }
   }
 }
