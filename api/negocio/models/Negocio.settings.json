@@ -23,6 +23,22 @@
     "servicio": {
       "model": "servicio",
       "via": "negocios"
+    },
+    "descripcion": {
+      "default": "",
+      "type": "text"
+    },
+    "web": {
+      "default": "",
+      "type": "string"
+    },
+    "direccion": {
+      "default": "",
+      "type": "string"
+    },
+    "fotos": {
+      "collection": "foto",
+      "via": "negocio"
     }
   }
 }

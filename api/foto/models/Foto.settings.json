@@ -18,6 +18,10 @@
     "escort": {
       "model": "escort",
       "via": "fotos"
+    },
+    "negocio": {
+      "model": "negocio",
+      "via": "fotos"
     }
   }
 }
