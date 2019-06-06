@@ -87,6 +87,15 @@
     "calificacions": {
       "collection": "calificacion",
       "via": "escort"
+    },
+    "tamaño": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "grande",
+        " mediano",
+        " pequeño"
+      ]
     }
   }
 }
